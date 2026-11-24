@@ -1,5 +1,7 @@
-# tiny-stack-vm
+# tiny-stack-vm entry
 
-按 kit 的 ISA.md 与参考实现 vm.mjs 逐条实现的栈式虚拟机：32 位回绕整数、256 值栈、64 层调用栈、256 字内存、十种 trap 各自的退出码、步数与输出上限。
+A tiny stack VM for make.fun's tiny stack ISA v1: 32-bit wrapping integers,
+256-value stack, 256 words of memory, branches, calls, I/O, and all ten traps
+with their own exit codes, matching the reference VM exactly.
 
-运行：`node main.ts`（读取 `/input/<id>/program.bin` 与 `input.bin`，写入 `/output/<id>/stdout.bin` 与 `exit.txt`）。
+Run `node main.ts`: reads `/input/<id>/`, writes `/output/<id>/` per instance.
